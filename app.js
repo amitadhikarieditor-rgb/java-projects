@@ -22,3 +22,6 @@ return sum;
 
 }
 console.log(sumCalc(10));
+
+console.Log(sum); // this is not possible for the console toh access because the funcction is not called and also it cannot access the variable inside the function! 
+
