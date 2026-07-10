@@ -25,8 +25,23 @@ public class Main{
             }
             System.out.println();
         }
+        //leet code two pointers question 
+        int i=0;
+        int j=num.length-1;
+
+        while(i<j){
+            int resSum=num[i]+num[j];
+            if(resSum==target){
+                System.out.print((i+1)+" "+(j+1)); //leetcode asks for 1 indexed answer
+            }else if(resSum<target){
+                i++;
+            }else{
+                j--;
+            }
+        }
         
     }
 }
+
 
 
